@@ -1,0 +1,167 @@
+@keyframes rewrite {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+
+body, h1, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  color: #fff; 
+}
+
+h2 {
+  overflow: hidden;
+  border-right: .10em solid rgb(230, 6, 6);
+  white-space: nowrap;
+  margin: 0;
+  letter-spacing: .15em;
+  animation: rewrite 2s steps(10) ;
+  width:min-content;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #222; 
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-header {
+  background-color: #000000; 
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 40px;
+  padding: 5px;
+}
+
+nav ul li a {
+  font-family: 'Arial', sans-serif;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+nav ul li a {
+  position: relative;
+}
+
+nav ul li a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease;
+}
+
+nav ul li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.section1{
+  background-color: #000000;
+  padding: 10;
+  margin: 20;
+  border-width: 10;
+  font-size: 19px;
+}
+.section h2 {
+  font-size: 30px;
+  color: #444;
+
+}
+
+.section-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding-top: 15px;
+}
+
+.section-text {
+  flex: 1;
+  padding: 20px;
+  margin: 20px;
+}
+
+.section-image {
+  flex: 1;
+  text-align: right;
+  padding: 15px;
+}
+
+.section-image img {
+  max-width: 100%;
+  height: auto;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+section a.cta-button {
+  display: inline-block;
+  background-color: #ff4444; 
+  color: #fff; 
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+section a.cta-button:hover {
+  background-color: #000; 
+  color: #ff4444; 
+}
+
+footer {
+  background-color: #000; 
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.links {
+  margin-top: 10px;
+}
+
+.links a.footer-link {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+}
+
+.links a.footer-link:hover {
+  text-decoration: underline;
+}
+
+
+
