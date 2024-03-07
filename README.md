@@ -1,2 +1,0 @@
-# Hopes
-Hopes webpage
