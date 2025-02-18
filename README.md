@@ -71,5 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 =======
 # Hopes
-Hopes webpage
->>>>>>> origin/main
+HOPES is a media webpage crafted to keep students informed of various events on campus. 
